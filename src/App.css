@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #40444b;
+  color: white;
+}
+
+main {
+  max-width: 500px;
+  margin: 25px auto;
+}
+
+form {
+  background: #2f3136;
+  display: flex;
+  border: 3px solid #202225;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+form input[type="text"] {
+  background: none;
+  border: 0;
+  padding: 10px 8px;
+  width: 100%;
+  display: block;
+  color: white;
+}
+
+form button {
+  background-color: #f28f0c;
+  padding: 10px 13px;
+  border: 0;
+  border-radius: 20px;
+  font-size: 15px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+div.task {
+  background-color: #303130;
+  padding: 20px 25px;
+  margin-top: 5px;
+  border-radius: 20px;
+  display: flex;
+  transition: opacity .3s linear;
+  align-items: center;
+  border: 3px solid #202225;
+  font-size: 30px;
+}
+
+div.task svg {
+  margin-right: 10px;
+  fill: #f28f0c;
+}
+
+div.task.done {
+  opacity: .7;
+}
+
+.task-name, div.task form {
+  flex-grow: 1;
+}
+
+div.task span {
+  position: relative;
+}
+
+div.task span:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #f28f0c;
+  position: absolute;
+  top: 18px;
+  transition: width .5s linears;
+}
+
+div.task.done span:before {
+  width: 100%;
+}
+
+main h1{
+  color: #f28f0c;
+  text-align: center;
+}
+
+main h3 {
+  text-align: center;
+}
+
+button.trash {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button.trash svg {
+    fill: #db3524;
+}
+
+div.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+button.edit {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+div.task form input {
+  padding: 3.5px 2px;
+  margin: 0;
+  color: #f28f0c;
+  background: #2f3136;
+  margin-right: 10px;
+  font-size: 20px;
+  border: 2px solid #aaa;
+}
+
+div.task form {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+}
